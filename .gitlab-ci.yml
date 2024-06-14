@@ -35,4 +35,4 @@ build:
     paths:
       - SalesBE/WebAPI/bin/Debug/net6.0/
   tags:
-    - dotnet
+    - sales-runner
