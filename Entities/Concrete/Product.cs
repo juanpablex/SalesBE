@@ -8,7 +8,7 @@ namespace Entities.Concrete
 {
     public class Product
     {
-        public int Id { get; set; }
+        public int Id { get; set; }  
         public string Name { get; set; }
         public string Supplier { get; set; }
         public int BrandId { get; set; }
