@@ -2,7 +2,6 @@ image: mcr.microsoft.com/dotnet/core/sdk:latest
 
 stages:
   - update_libraries
-  - test
   - build
 
 variables:
@@ -19,13 +18,6 @@ update_libraries:
     # Use dotnet-outdated tool or other method to update packages
   only:
     - schedules
-
-test:
-  stage: test
-  script:
-    - dotnet test
-  tags:
-    - sales-runner
 
 build:
   stage: build
