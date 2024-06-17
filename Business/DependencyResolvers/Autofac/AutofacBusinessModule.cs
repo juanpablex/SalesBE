@@ -13,6 +13,22 @@ using DataAccess.Repositories.OperationClaimRepository;
 using DataAccess.Repositories.UserOperationClaimRepository;
 using DataAccess.Repositories.UserRepository;
 
+using Business.Repositories.PersonRepository;
+using Business.Repositories.PersonTypeRepository;
+using Business.Repositories.PhoneRepository;
+using Business.Repositories.ProductRepository;
+using Business.Repositories.ModelRepository;
+using Business.Repositories.BrandRepository;
+using Business.Repositories.ColorRepository;
+
+using DataAccess.Repositories.BrandRepository;
+using DataAccess.Repositories.ColorRepository;
+using DataAccess.Repositories.ModelRepository;
+using DataAccess.Repositories.PersonRepository;
+using DataAccess.Repositories.PersonTypeRepository;
+using DataAccess.Repositories.PhoneRepository;
+using DataAccess.Repositories.ProductRepository;
+
 namespace Business.DependencyResolvers.Autofac
 {
     public class AutofacBusinessModule : Module
@@ -34,6 +50,28 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<AuthManager>().As<IAuthService>();
 
             builder.RegisterType<TokenHandler>().As<ITokenHandler>();
+
+            builder.RegisterType<PersonManager>().As<IPersonService>();
+            builder.RegisterType<EfPersonDal>().As<IPersonDal>();
+
+            builder.RegisterType<PhoneManager>().As<IPhoneService>();
+            builder.RegisterType<EfPhoneDal>().As<IPhoneDal>();
+
+            builder.RegisterType<PersonTypeManager>().As<IPersonTypeService>();
+            builder.RegisterType<EfPersonTypeDal>().As<IPersonTypeDal>();
+
+            builder.RegisterType<ProductManager>().As<IProductService>();
+            builder.RegisterType<EfProductDal>().As<IProductDal>();
+
+            builder.RegisterType<BrandManager>().As<IBrandService>();
+            builder.RegisterType<EfBrandDal>().As<IBrandDal>();
+
+            builder.RegisterType<ModelManager>().As<IModelService>();
+            builder.RegisterType<EfModelDal>().As<IModelDal>();
+
+            builder.RegisterType<ColorManager>().As<IColorService>();
+            builder.RegisterType<EfColorDal>().As<IColorDal>();
+
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
