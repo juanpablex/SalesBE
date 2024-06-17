@@ -19,13 +19,8 @@ namespace DataAccess.Context.EntityFramework
         public DbSet<Phone> Phones { get; set; }
         public DbSet<PersonType> PersonTypes { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<Contract> Contracts { get; set; }
-        public DbSet<PaymentMethod> PaymentMethods { get; set; }
-        public DbSet<State> States { get; set; }
-        public DbSet<Entities.Concrete.Range> Ranges { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Model> Models { get; set; }
         public DbSet<Color> Colors { get; set; }
-        public DbSet<GetPeopleAndTypes> GetPeopleTye { get; set; }
     }
 }
