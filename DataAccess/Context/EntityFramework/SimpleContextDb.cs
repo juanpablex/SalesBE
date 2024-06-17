@@ -14,5 +14,25 @@ namespace DataAccess.Context.EntityFramework
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<EmailParameter> EmailParameters { get; set; }
+		
+		public DbSet<Person> People { get; set; }
+        public DbSet<Phone> Phones { get; set; }
+        public DbSet<PersonType> PersonTypes { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Color> Colors { get; set; }    }
+    }
+        public DbSet<Entities.Concrete.Range> Ranges { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<GetPeopleAndTypes> GetPeopleTye { get; set; }
+    }
+        public DbSet<Entities.Concrete.Range> Ranges { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<GetPeopleAndTypes> GetPeopleTye { get; set; }
     }
 }
