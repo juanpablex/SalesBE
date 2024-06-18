@@ -7,7 +7,6 @@ using Core.Utilities.Result.Abstract;
 using Core.Utilities.Result.Concrete;
 using DataAccess.Repositories.PersonRepository;
 using Entities.Concrete;
-using Entities.Dtos.People;
 
 namespace Business.Repositories.PersonRepository
 {

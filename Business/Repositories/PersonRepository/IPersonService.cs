@@ -1,6 +1,5 @@
 using Core.Utilities.Result.Abstract;
 using Entities.Concrete;
-using Entities.Dtos.People;
 using System;
 using System.Collections.Generic;
 using System.Linq;
