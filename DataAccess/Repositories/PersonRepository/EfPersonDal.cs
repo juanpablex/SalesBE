@@ -1,7 +1,6 @@
 using Core.DataAccess.EntityFramework;
 using DataAccess.Context.EntityFramework;
 using Entities.Concrete;
-using Entities.Dtos.People;
 using System;
 using System.Collections.Generic;
 using System.Linq;
