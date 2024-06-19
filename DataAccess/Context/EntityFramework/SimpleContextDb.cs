@@ -7,7 +7,8 @@ namespace DataAccess.Context.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-ABR5RK9\\SQLEXPRESS;Database=InspectionDB;Integrated Security=true;TrustServerCertificate = True");
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-ABR5RK9\\SQLEXPRESS;Database=InspectionDB;Integrated Security=true;TrustServerCertificate = True");
+            optionsBuilder.UseSqlServer("Server=inspectiondbcloud.ctmis8maayan.us-east-2.rds.amazonaws.com,1433;Database=inspectiondbcloud;User Id=admin;Password=Juan123#;Integrated Security=false");
         }
 
         public DbSet<User> Users { get; set; }
